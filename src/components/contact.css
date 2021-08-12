@@ -1,0 +1,108 @@
+.weight_form {
+	border: 2px solid rgb(0, 43, 58);
+	border-radius: 20px;
+	width: 400px;
+	padding: 40px;
+	margin: 20px;
+}
+
+.form_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0.4;
+}
+.form_container input {
+	width: 300px;
+	display: block;
+	margin: 10px 0;
+	padding: 8px 5px;
+	outline: lightblue;
+	border: 2px solid lightblue;
+	border-radius: 10px;
+}
+.submit_btn {
+	padding: 10px;
+	outline: none;
+	cursor: pointer;
+	background-color: rgb(0, 43, 58);
+	color: white;
+	border: none;
+	border-radius: 10px;
+	transition: 0.5s ease;
+}
+.submit_btn:hover {
+	color: rgb(0, 43, 58);
+	background-color: white;
+	border: 1px solid rgb(0, 43, 58);
+}
+.main_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	padding: 0 20px;
+}
+.weight_list {
+	flex: 0.6;
+	margin-left: 150px;
+}
+
+table.customTable {
+	width: 100%;
+	background-color: #ffffff;
+	border-collapse: collapse;
+	border-width: 2px;
+	border-color: lightblue;
+	border-style: solid;
+	color: #000000;
+	border-radius: 10px;
+}
+
+table.customTable td,
+table.customTable th {
+	border-width: 2px;
+	border-color: lightblue;
+	border-style: solid;
+	padding: 5px;
+}
+
+table.customTable thead {
+	background-color: #1fe9ff;
+}
+
+.edit-btn,
+.delete-btn {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	transition: 0.5s ease;
+}
+.edit-btn:hover {
+	transform: scale(1.1);
+	color: rgb(0, 43, 58);
+	cursor: pointer;
+}
+.delete-btn:hover {
+	transform: scale(1.1);
+	color: crimson;
+	cursor: pointer;
+}
+
+@media (max-width: 990px) {
+	.main_container {
+		flex-direction: column;
+	}
+	form {
+		width: 300px;
+		padding: 20px;
+		margin: 10px;
+	}
+	.form_container input {
+		width: 200px;
+	}
+	.weight_list {
+		width: 100%;
+		margin-left: 0px;
+	}
+}
